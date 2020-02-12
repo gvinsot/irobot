@@ -11,6 +11,7 @@ from gpiozero import LED
 
 server = Flask(__name__)
 CORS(server)
+script_path=os.path.dirname(__file__)
 
 server.config['SWAGGER'] = {
     "swagger_version": "2.0",
@@ -64,9 +65,11 @@ def stop_left():
 @server.route('/', defaults={'path': 'index.html'})
 @server.route('/<path:path>')
 def send_static(path):
-    if(os.path.exists('static/'+path)):
+    
+    if(os.path.exists(os.path.join(script_path, 'static/'+path))):
         return send_from_directory('static', path)
     else:
+        print("File not found :"+path)
         return send_from_directory('static', 'index.html') 
 
 

@@ -3,7 +3,7 @@
  
 <head>
     <meta charset="UTF-8">
-    <title>Button demo</title>
+    <title>iRobot</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,11 +19,11 @@
  
 <body>
     <div class="row fill">
-        <div class="col-6 col-sm-6 col-md-6 fill">
-        <button ontouchstart="startLeftEngine()" ontouchend="stopLeftEngine()" class="btn btn-lg btn-success fill"><=</button>
+        <div class="col-xs-6 col-sm-6 col-md-6 container nomargins">
+        <button ontouchstart="startLeftEngine()" ontouchend="stopLeftEngine()" style="width:60%;height:40%" class="btn btn-lg btn-primary center"><img src="img/arrow-left.png"</button>
         </div>
-        <div class="col-6 col-sm-6 col-md-6">
-        <button ontouchstart="startRightEngine()" ontouchend="stopRightEngine()" class="btn btn-lg btn-success">=></button>   
+        <div class="col-xs-6 col-sm-6 col-md-6 container nomargins">
+        <button ontouchstart="startRightEngine()" ontouchend="stopRightEngine()" style="width:60%;height:40%" class="btn btn-lg btn-primary center"><img src="img/arrow-right.png"/></button>   
         </div>
     </div>
 </body>
