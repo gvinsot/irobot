@@ -1,3 +1,4 @@
 flask_cors
 flasgger
-RPi.GPIO
+#RPi.GPIO
+gpiozero
