@@ -1,0 +1,17 @@
+[Unit]
+Description=iRobot
+After=network-online.target
+ 
+[Service]
+Type=simple
+User=root
+UMask=007
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/ubuntu/iRobot/app/iRobot.py
+Restart=always
+RestartSec=5
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target

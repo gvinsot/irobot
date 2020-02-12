@@ -1,3 +1,4 @@
+#!/bin/python3
 # coding: utf-8
 import os
 import json
@@ -67,9 +68,13 @@ def stop_left():
     except Exception as e:
         return jsonify(e)
 
+@app.route('/', defaults={'path': 'index.html'})
 @server.route('/<path:path>')
 def send_static(path):
-    return send_from_directory('static', path)
+    if(os.path.exists('static/'+path))
+        return send_from_directory('static', path)
+    else
+        return send_from_directory('static', 'index.html') 
 
 
 def init():
