@@ -1,5 +1,6 @@
 # iRobot
 
+This is an educational project for children who want to remote control a self 3D printed robot.
 
 ## Installation <a name="installation"></a>
 
