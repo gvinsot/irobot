@@ -14,13 +14,6 @@ cd irobot
 sudo ./init.sh
 ```
 
-### How to launch the server 
-(default host=0.0.0.0, port=3001)
-
-```shell
-./app/iRobot.py
-```
-
 You can now connect with a browser to the web interface to pilot the robot.
 For exemple, 
 http://192.168.0.10:3001/
