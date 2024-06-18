@@ -20,3 +20,7 @@ sudo ./init.sh
 ```shell
 ./app/iRobot.py
 ```
+
+You can now connect with a browser to the web interface to pilot the robot.
+For exemple, 
+http://192.168.0.10:3001/
